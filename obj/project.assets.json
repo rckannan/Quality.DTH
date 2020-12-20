@@ -6904,19 +6904,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rithv\\.nuget\\packages\\": {}
+    "C:\\Users\\quali\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\repos\\Quality.DTH\\Quality.DTH.csproj",
+      "projectUniqueName": "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH\\Quality.DTH.csproj",
       "projectName": "Quality.DTH",
-      "projectPath": "E:\\repos\\Quality.DTH\\Quality.DTH.csproj",
-      "packagesPath": "C:\\Users\\rithv\\.nuget\\packages\\",
-      "outputPath": "E:\\repos\\Quality.DTH\\obj\\",
+      "projectPath": "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH\\Quality.DTH.csproj",
+      "packagesPath": "C:\\Users\\quali\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\rithv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\quali\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
