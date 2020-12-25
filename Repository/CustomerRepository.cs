@@ -23,17 +23,17 @@ namespace Quality.DTH.Repository
         }
 
         public Customer Add(Customer customer)
-        { 
-                return _context.Customers
-                    .Add(customer)
-                    .Entity; 
+        {
+            var retobj = _context.Customers.Add(customer).Entity;
+            this.UnitOfWork.SaveEntitiesAsync();
+            return retobj; 
         }
 
         public Customer Update(Customer customer)
         {
-            return _context.Customers
-                    .Update(customer)
-                    .Entity;
+            var retobj = _context.Customers.Update(customer).Entity;
+            this.UnitOfWork.SaveEntitiesAsync();
+            return retobj; 
         }
 
         public async Task<Customer> FindAsync(Int64 identity)

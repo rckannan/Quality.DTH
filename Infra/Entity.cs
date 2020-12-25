@@ -12,7 +12,7 @@ namespace Quality.DTH
             {
                 return _Idbase;
             }
-            protected set
+            set
             {
                 _Idbase = value;
             }

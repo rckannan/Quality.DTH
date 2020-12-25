@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage; 
+﻿using Autofac;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Data;
 using System.Threading;
@@ -9,21 +11,28 @@ namespace Quality.DTH
 {
     public class COREAPIContext : DbContext, IUnitOfWork
     {
+        private readonly ILoggerFactory _loggerFactory;
         public const string DEFAULT_SCHEMA = "DTH";
         public DbSet<Customer> Customers { get; set; }
-        //public DbSet<OrderItem> OrderItems { get; set; }
-      
+        public DbSet<Dealer> Dealers { get; set; }
+        public DbSet<master_serialitem> Master_serialitem { get; set; } 
+        public DbSet<Master_Stock> Master_Stocks { get; set; }
+
+        public DbSet<Stock_Transaction> Stock_Transactions { get; set; }
 
         //private readonly IMediator _mediator;
         private IDbContextTransaction _currentTransaction;
 
         public COREAPIContext()
         {
-            System.Diagnostics.Debug.WriteLine("COREAPIContext::ctor ->" + this.GetHashCode());
+            System.Diagnostics.Debug.WriteLine("COREAPIContext::ctor ->" + this.GetHashCode()); 
         }
 
-        public COREAPIContext(DbContextOptions<COREAPIContext> options) : base(options) {
+        public COREAPIContext(DbContextOptions<COREAPIContext> options, ILoggerFactory loggerFactory = null) : base(options)
+        {
+
             System.Diagnostics.Debug.WriteLine("COREAPIContext::ctor ->" + this.GetHashCode());
+            //_loggerFactory = loggerFactory;
         }
 
         public IDbContextTransaction GetCurrentTransaction() => _currentTransaction;
@@ -38,10 +47,12 @@ namespace Quality.DTH
         //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            
+        { 
             modelBuilder.ApplyConfiguration(new CustomerEntityTypeConfiguration());
-            
+            modelBuilder.ApplyConfiguration(new DealerEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new master_serialitemEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new Master_StockEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new Stock_TransactionEntityTypeConfiguration());
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -49,7 +60,12 @@ namespace Quality.DTH
             var conf = Program.GetConfiguration(); 
             optionsBuilder
                 .UseMySQL(
-                    conf["ConnectionString"] );
+                    conf["ConnectionString"]).UseLazyLoadingProxies() // <-- enable Lazy Loading
+                                                                       .UseLoggerFactory(LoggerFactory.Create(b => b .AddFilter(level => level >= LogLevel.Information   )))
+                 
+                .EnableSensitiveDataLogging()
+                .EnableDetailedErrors();
+             
         }
 
         public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken))

@@ -1,59 +1,61 @@
-﻿CALL `tatasky`.`sp_add_stock_trans`(-1, 4, '2020-12-05', 2000, 2001, 0, 0, 101, 50, null, '', @idd)
-CREATE TABLE `tbl_stock_trans` (
-  `row_id` int NOT NULL AUTO_INCREMENT COMMENT 'primary key',
+﻿CREATE TABLE `tbl_dealers` (
+  `Idbase` bigint NOT NULL AUTO_INCREMENT,
   `created_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'created tiem',
   `updated_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'updated tiem',
-  `trans_id` bigint NOT NULL,
-  `trans_del_id` bigint NOT NULL,
-  `trans_date` date DEFAULT NULL,
-  `trans_source_id` int DEFAULT NULL,
-  `trans_dest_id` int DEFAULT NULL,
-  `trans_type` smallint DEFAULT NULL,
-  `trans_item_type` smallint DEFAULT NULL,
-  `trans_item_name_id` int DEFAULT NULL,
-  `trans_qty` smallint DEFAULT NULL,
-  `trans_item_ser_id` int DEFAULT NULL,
-  `trans_notes` varchar(500) DEFAULT NULL,
-  PRIMARY KEY (`row_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
-CREATE TABLE `tbl_master_stock` (
-  `row_id` int NOT NULL AUTO_INCREMENT,
-  `stock_id` int DEFAULT NULL,
-  `stock_name` varchar(50) DEFAULT NULL,
-  `stock_type` smallint DEFAULT NULL,
-  `stock_unit` varchar(10) DEFAULT NULL,
-  `stock_cost` int DEFAULT NULL,
-  `stock_detail` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`row_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-CREATE TABLE `tbl_master_serialitem` (
-  `row_id` int NOT NULL AUTO_INCREMENT,
-  `item_name_id` int NOT NULL,
-  `item_name` varchar(50) NOT NULL,
-  `item_detail` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`row_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `dealer_acc_id` bigint NOT NULL,
+  `dealer_name` varchar(200) DEFAULT NULL,
+  `dealer_contact` varchar(30) DEFAULT NULL,
+  `dealer_address` varchar(300) DEFAULT NULL,
+  `dealer_beat` smallint DEFAULT NULL,
+  `dealer_category` smallint DEFAULT NULL,
+  PRIMARY KEY (`Idbase`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 CREATE TABLE `tbl_master_serial_num` (
-  `row_id` int NOT NULL AUTO_INCREMENT,
-  `serial_id` int NOT NULL,
+  `Idbase` bigint NOT NULL AUTO_INCREMENT,
   `serial_name_id` int NOT NULL,
   `serial_num` varchar(15) NOT NULL,
   `serial_cur_loc` int NOT NULL,
   `serial_cur_stat` smallint NOT NULL,
   `serial_mis` varchar(45) DEFAULT NULL,
   `trans_id` int NOT NULL,
-  PRIMARY KEY (`row_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Save Items Serial Nos';
-CREATE TABLE `tbl_dealers` (
-  `row_id` int NOT NULL AUTO_INCREMENT COMMENT 'primary key',
+  PRIMARY KEY (`Idbase`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Save Items Serial Nos';
+CREATE TABLE `tbl_master_serialitem` (
+  `Idbase` bigint NOT NULL AUTO_INCREMENT,
+  `item_name` varchar(50) NOT NULL,
+  `item_detail` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`Idbase`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `tbl_master_stock` (
+  `Idbase` bigint NOT NULL AUTO_INCREMENT,
+  `stock_name` varchar(100) DEFAULT NULL,
+  `stock_type` smallint DEFAULT NULL,
+  `stock_unit` varchar(30) DEFAULT NULL,
+  `stock_cost` decimal(10,0) DEFAULT '0',
+  `stock_detail` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`Idbase`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `tbl_stock_trans` (
+  `Idbase` bigint NOT NULL AUTO_INCREMENT,
   `created_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'created tiem',
   `updated_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'updated tiem',
-  `fld_dealer_id` int NOT NULL,
-  `fld_dealer_acc_id` int NOT NULL,
-  `fld_dealer_name` varchar(200) DEFAULT NULL,
-  `fld_dealer_contact` varchar(30) DEFAULT NULL,
-  `fld_dealer_address` varchar(300) DEFAULT NULL,
-  `fld_dealer_beat` smallint DEFAULT NULL,
-  `fld_dealer_category` smallint DEFAULT NULL,
-  PRIMARY KEY (`row_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  `trans_del_id` bigint NOT NULL,
+  `trans_date` date DEFAULT NULL,
+  `trans_source_dealer_id` bigint DEFAULT NULL,
+  `trans_dest_dealer_id` bigint DEFAULT NULL,
+  `trans_type` smallint DEFAULT NULL,
+  `trans_item_type` smallint DEFAULT NULL,
+  `trans_item_stock_id` bigint DEFAULT NULL,
+  `trans_qty` smallint DEFAULT NULL,
+  `trans_item_ser_id` bigint DEFAULT NULL,
+  `trans_notes` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`Idbase`),
+  KEY `trans_source_dealer_id` (`trans_source_dealer_id`),
+  KEY `trans_dest_dealer_id` (`trans_dest_dealer_id`),
+  KEY `trans_item_stock_id` (`trans_item_stock_id`),
+  KEY `trans_item_ser_id` (`trans_item_ser_id`),
+  CONSTRAINT `tbl_stock_trans_ibfk_1` FOREIGN KEY (`trans_source_dealer_id`) REFERENCES `tbl_dealers` (`Idbase`),
+  CONSTRAINT `tbl_stock_trans_ibfk_2` FOREIGN KEY (`trans_dest_dealer_id`) REFERENCES `tbl_dealers` (`Idbase`),
+  CONSTRAINT `tbl_stock_trans_ibfk_3` FOREIGN KEY (`trans_item_stock_id`) REFERENCES `tbl_master_stock` (`Idbase`),
+  CONSTRAINT `tbl_stock_trans_ibfk_4` FOREIGN KEY (`trans_item_ser_id`) REFERENCES `tbl_master_serialitem` (`Idbase`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

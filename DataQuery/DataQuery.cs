@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Quality.DTH.Queries
 {
-
     public interface ICustomerQueries
     {
         Task<Customer> GetCustomerAsync(int id);

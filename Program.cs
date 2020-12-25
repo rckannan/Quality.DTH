@@ -31,6 +31,10 @@ namespace Quality.DTH
                 var container = new ContainerBuilder();
                 container.RegisterModule(new ApplicationModule(configuration["ConnectionString"]));
 
+                //container.Register(c => Log.Logger)
+                //.As<ILogger>()
+                //.InstancePerLifetimeScope();
+
                 ContainerProvider.Container = container.Build();
 
                 Log.Information("Starting App host ({ApplicationContext})...", AppName); 
