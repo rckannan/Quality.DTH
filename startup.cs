@@ -21,7 +21,7 @@ namespace Quality.DTH
         public virtual IServiceProvider ConfigureServices(IServiceCollection services)
         {
             
-
+        //comment
             var container = new ContainerBuilder();
             container.Populate(services);
 
