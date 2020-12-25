@@ -27,7 +27,11 @@ namespace Quality.DTH.Queries
             using (var connection = new MySql.Data.MySqlClient.MySqlConnection(_connectionString))
             {
                 connection.Open();
-                var sql = $" select tns.*,src.*, dest.*  from DTH.tbl_stock_trans tns Inner join DTH.tbl_dealers src on tns.trans_source_dealer_id = src.Idbase Inner join DTH.tbl_dealers dest on tns.trans_dest_dealer_id = dest.Idbase WHERE  tns.Idbase={id}" ;
+                var sql = $"select tns.*,src.*, dest.*, stck.*,sr_itm.*   from DTH.tbl_stock_trans tns " +
+                            "Inner join DTH.tbl_dealers src on tns.trans_source_dealer_id = src.Idbase "+
+                            "Inner join DTH.tbl_dealers dest on tns.trans_dest_dealer_id = dest.Idbase " +
+                            "Inner join DTH.tbl_master_stock stck on tns.trans_item_stock_id = stck.Idbase " +
+                            "Inner join DTH.tbl_master_serialitem sr_itm on tns.trans_item_ser_id = sr_itm.Idbase WHERE  tns.Idbase={id}";
 
                 //Func<Stock_TransactionDTO, DealerDTO, DealerDTO> p = (oi, i, v) => 
                 //                                             {
@@ -38,11 +42,15 @@ namespace Quality.DTH.Queries
                                        sql,
                                         new[] {typeof(Stock_TransactionDTO),
                                             typeof(DealerDTO),
-                                            typeof(DealerDTO)}
+                                            typeof(DealerDTO),
+                                        typeof(Master_StockDTO),
+                                        typeof(master_serialitemDTO)}
                                         , obj => {
                                             Stock_TransactionDTO _dto = obj[0] as Stock_TransactionDTO;
                                             _dto.trans_source_dealer = obj[1] as DealerDTO;
                                             _dto.trans_dest_dealer = obj[2] as DealerDTO;
+                                            _dto.trans_item_stock = obj[3] as Master_StockDTO;
+                                            _dto.trans_item_ser = obj[4] as master_serialitemDTO;
                                             return _dto; },splitOn: "Idbase"
                                         );
 
@@ -67,23 +75,25 @@ namespace Quality.DTH.Queries
             {
                 connection.Open();
 
-                //var result = await connection.QueryAsync<Stock_TransactionDTO>(
-                //   @"select * from DTH.tbl_stock_trans ");
-
-                //if (result.AsList().Count == 0)
-                //    throw new KeyNotFoundException();
-
-                var sql = $" select tns.*,src.*, dest.*  from DTH.tbl_stock_trans tns Inner join DTH.tbl_dealers src on tns.trans_source_dealer_id = src.Idbase Inner join DTH.tbl_dealers dest on tns.trans_dest_dealer_id = dest.Idbase";
-                                         
+                var sql = $"select tns.*,src.*, dest.*, stck.*,sr_itm.*   from DTH.tbl_stock_trans tns " +
+                            "Inner join DTH.tbl_dealers src on tns.trans_source_dealer_id = src.Idbase " +
+                            "Inner join DTH.tbl_dealers dest on tns.trans_dest_dealer_id = dest.Idbase " +
+                            "Inner join DTH.tbl_master_stock stck on tns.trans_item_stock_id = stck.Idbase " +
+                            "Inner join DTH.tbl_master_serialitem sr_itm on tns.trans_item_ser_id = sr_itm.Idbase"; 
+              
                 var items = await connection.QueryAsync<Stock_TransactionDTO>(
                                        sql,
                                         new[] {typeof(Stock_TransactionDTO),
                                             typeof(DealerDTO),
-                                            typeof(DealerDTO)}
+                                            typeof(DealerDTO),
+                                        typeof(Master_StockDTO),
+                                        typeof(master_serialitemDTO)}
                                         , obj => {
                                             Stock_TransactionDTO _dto = obj[0] as Stock_TransactionDTO;
                                             _dto.trans_source_dealer = obj[1] as DealerDTO;
                                             _dto.trans_dest_dealer = obj[2] as DealerDTO;
+                                            _dto.trans_item_stock = obj[3] as Master_StockDTO;
+                                            _dto.trans_item_ser = obj[4] as master_serialitemDTO;
                                             return _dto;
                                         }, splitOn: "Idbase"
                                         );
@@ -110,7 +120,9 @@ namespace Quality.DTH.Queries
         public Int64 trans_item_stock_id { get; set; }
         public Int16 trans_qty { get; set; }
         public Int64 trans_item_ser_id { get; set; }
-        public string trans_notes { get; set; }
+        public string trans_notes { get; set; } 
+        public Master_StockDTO trans_item_stock { get; set; }
+        public master_serialitemDTO trans_item_ser { get; set; }
 
     }
 

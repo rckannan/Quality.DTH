@@ -17,13 +17,11 @@ namespace Quality.DTH
         private Int64 trans_item_stock_id;
         private Int16 trans_qty;
         private Int64 trans_item_ser_id;
-        private string trans_notes;
-
-        //private   Dealer _dealer_src; 
-        public virtual Dealer trans_source_dealer { get; set; }
-
-        //private   Dealer _dealer_dest;
-        public virtual Dealer trans_dest_dealer { get; set; }
+        private string trans_notes; 
+        public virtual Dealer trans_source_dealer { get; set; } 
+        public virtual Dealer trans_dest_dealer { get; set; } 
+        public virtual Master_Stock trans_item_stock { get; set; } 
+        public virtual master_serialitem trans_item_ser { get; set; }
 
         protected Stock_Transaction()
         {
@@ -82,17 +80,26 @@ namespace Quality.DTH
             var navigation2 = tableConfiguration.Metadata.FindNavigation(nameof(Stock_Transaction.trans_dest_dealer));
             navigation2.SetPropertyAccessMode(PropertyAccessMode.Property); 
           
-            tableConfiguration.Property<Int64>("trans_dest_dealer_id").UsePropertyAccessMode(PropertyAccessMode.Field).HasColumnName("trans_dest_dealer_id").IsRequired();
-
-            
+            tableConfiguration.Property<Int64>("trans_dest_dealer_id").UsePropertyAccessMode(PropertyAccessMode.Field).HasColumnName("trans_dest_dealer_id").IsRequired(); 
 
             tableConfiguration.Property<Int16>("trans_type").UsePropertyAccessMode(PropertyAccessMode.Field).HasColumnName("trans_type").IsRequired();
             tableConfiguration.Property<Int16>("trans_item_type").UsePropertyAccessMode(PropertyAccessMode.Field).HasColumnName("trans_item_type").IsRequired();
 
             tableConfiguration.Property<Int64>("trans_item_stock_id").UsePropertyAccessMode(PropertyAccessMode.Field).HasColumnName("trans_item_stock_id").IsRequired();
+
+            tableConfiguration.HasOne<Master_Stock>(x => x.trans_item_stock).WithOne().HasForeignKey<Stock_Transaction>("trans_item_stock_id");
+
+            var navigation3 = tableConfiguration.Metadata.FindNavigation(nameof(Stock_Transaction.trans_item_stock));
+            navigation.SetPropertyAccessMode(PropertyAccessMode.Property);
+
             tableConfiguration.Property<Int16>("trans_qty").UsePropertyAccessMode(PropertyAccessMode.Field).HasColumnName("trans_qty").IsRequired();
 
             tableConfiguration.Property<Int64>("trans_item_ser_id").UsePropertyAccessMode(PropertyAccessMode.Field).HasColumnName("trans_item_ser_id").IsRequired();
+
+            tableConfiguration.HasOne<master_serialitem>(x => x.trans_item_ser).WithOne().HasForeignKey<Stock_Transaction>("trans_item_ser_id");
+
+            var navigation4 = tableConfiguration.Metadata.FindNavigation(nameof(Stock_Transaction.trans_item_ser));
+            navigation.SetPropertyAccessMode(PropertyAccessMode.Property);
 
             tableConfiguration.Property<string>("trans_notes").UsePropertyAccessMode(PropertyAccessMode.Field).HasColumnName("trans_notes").IsRequired();
         }

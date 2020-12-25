@@ -46,29 +46,34 @@ namespace Quality.DTH
             try
             {
                 //add dealer
-                //var dealer = new Dealer( 1,  DateTime.Now, DateTime.Now, 1, "new", "new", "address", 1, 1);
-                //var outdeal = _dealerRepository.Update(dealer);
-                ////var repo = _customerQueries.GetCustomersAsync().Result;
-                //var repo = _dealerQueries.GetDealers().Result;
+                //var dealer = new Dealer(0, DateTime.Now, DateTime.Now, 1, "Dealer A", "new", "address", 1, 1);
+                //var outdeal = _dealerRepository.Add(dealer);
 
-                //var dealer = new master_serialitem(1,  "new", "newA" );
-                //var outdeal = _master_SerialitemRepository.Add(dealer);
-                //var repo = _master_SerialItemQueries.GetMaster_SerialItems().Result;  
-                //txtData.Text =  $" {repo.FirstOrDefault().item_detail}    :    {repo.FirstOrDefault().item_name} "  ;
+                //var dealer2 = new Dealer(0, DateTime.Now, DateTime.Now, 1, "Dealer B", "new", "address", 1, 1);
+                //var outdeal2 = _dealerRepository.Add(dealer2);
 
-                //var dealer = new Master_Stock(1, "new", "newA","stock detao", 0, 100);
-                //var outdeal = _master_StockRepository.Add(dealer);
-                //var repo = _master_StockQueries.GetMaster_StockItems().Result;
-                //txtData.Text = $" {repo.FirstOrDefault().stock_name}    :    {repo.FirstOrDefault().stock_detail} ";
+                //var St_ser = new master_serialitem(0, "Stock Ser A", "Stock Ser A");
+                //var outdeal3 = _master_SerialitemRepository.Add(St_ser);
 
-                var srcdealer_ID = _dealerQueries.GetDealer(1).Result.Idbase;
-                var destdealer_ID = _dealerQueries.GetDealer(2).Result.Idbase;
+                //var St_ser2 = new master_serialitem(0, "Stock Ser B", "Stock Ser B");
+                //var outdeal4 = _master_SerialitemRepository.Add(St_ser2);
 
-                var trans_stock = new Stock_Transaction(0, DateTime.Now, DateTime.Now, 100, DateTime.Now,   srcdealer_ID, destdealer_ID,0, 0, 0, 1,1, "notes");
+                //var mast_stk = new Master_Stock(0, "Stock A", "newA", "stock detao", 0, 100);
+                //var outdeal5 = _master_StockRepository.Add(mast_stk);
 
-                //var outdeal = _stock_TransRepository.Add(trans_stock);
-                var outdeal2 = _stock_TransRepository.FindAsync(3).Result;
-                var repo = stock_TransQueries.GetStock_Tran_list().Result;
+                //var mast_stkB = new Master_Stock(0, "Stock B", "newA", "stock detao", 0, 100);
+                //var outdeal6 = _master_StockRepository.Add(mast_stkB);
+
+                //var Dealer_list = _dealerQueries.GetDealers().Result;
+                //var serial_list = _master_SerialItemQueries.GetMaster_StockItems().Result;
+                //var stock_list = _master_StockQueries.GetMaster_StockItems().Result;
+ 
+
+                //var trans_stock = new Stock_Transaction(0, DateTime.Now, DateTime.Now, 100, DateTime.Now,   9, 10,0, 0, 2, 1,2, "notes");
+
+                // var outdeal = _stock_TransRepository.Add(trans_stock);
+                 var outdeal2 = _stock_TransRepository.FindAsync(19).Result;
+                 var repo = stock_TransQueries.GetStock_Tran_list().Result;
                 //txtData.Text = $" {repo.FirstOrDefault().stock_name}    :    {repo.FirstOrDefault().stock_detail} ";
 
             }

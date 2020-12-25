@@ -54,7 +54,9 @@ namespace Quality.DTH.Repository
         public async Task<Stock_Transaction> FindAsync(Int64 identity)
         {
             var buyer = await _context.Stock_Transactions
-                .Include(b => b.trans_source_dealer)  
+                .Include(b => b.trans_source_dealer)
+                .Include(b => b.trans_item_ser)
+                .Include(b => b.trans_item_stock)
                 .Where(b => b.Idbase == identity)
                 .SingleOrDefaultAsync();
 
