@@ -46,6 +46,7 @@ namespace Quality.DTH.Repository
         public Dealer Delete(Dealer item)
         {
             var retobj = _context.Dealers.Remove(item).Entity;
+             
             this.UnitOfWork.SaveEntitiesAsync();
             return retobj;
         }

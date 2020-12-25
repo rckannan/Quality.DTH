@@ -64,14 +64,14 @@ namespace Quality.DTH
                 //var mast_stkB = new Master_Stock(0, "Stock B", "newA", "stock detao", 0, 100);
                 //var outdeal6 = _master_StockRepository.Add(mast_stkB);
 
-                //var Dealer_list = _dealerQueries.GetDealers().Result;
-                //var serial_list = _master_SerialItemQueries.GetMaster_StockItems().Result;
-                //var stock_list = _master_StockQueries.GetMaster_StockItems().Result;
- 
+                var Dealer_list = _dealerQueries.GetDealers().Result;
+                var serial_list = _master_SerialItemQueries.GetMaster_StockItems().Result;
+                var stock_list = _master_StockQueries.GetMaster_StockItems().Result;
 
-                //var trans_stock = new Stock_Transaction(0, DateTime.Now, DateTime.Now, 100, DateTime.Now,   9, 10,0, 0, 2, 1,2, "notes");
 
-                // var outdeal = _stock_TransRepository.Add(trans_stock);
+                var trans_stock = new Stock_Transaction(0, DateTime.Now, DateTime.Now, 100, DateTime.Now,   9, 10,0, 0, 2, 1,2, "notes");
+
+                var outdeal = _stock_TransRepository.Add(trans_stock);
                  var outdeal2 = _stock_TransRepository.FindAsync(19).Result;
                  var repo = stock_TransQueries.GetStock_Tran_list().Result;
                 //txtData.Text = $" {repo.FirstOrDefault().stock_name}    :    {repo.FirstOrDefault().stock_detail} ";
