@@ -7,5 +7,17 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Stocks_Trans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Stock_Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\test.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

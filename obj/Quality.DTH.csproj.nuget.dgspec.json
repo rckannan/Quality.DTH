@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rithv\\source\\repos\\rckannan\\Quality.DTH\\Quality.DTH.csproj": {}
+    "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\Quality.DTH.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rithv\\source\\repos\\rckannan\\Quality.DTH\\Quality.DTH.csproj": {
+    "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\Quality.DTH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rithv\\source\\repos\\rckannan\\Quality.DTH\\Quality.DTH.csproj",
+        "projectUniqueName": "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\Quality.DTH.csproj",
         "projectName": "Quality.DTH",
-        "projectPath": "C:\\Users\\rithv\\source\\repos\\rckannan\\Quality.DTH\\Quality.DTH.csproj",
-        "packagesPath": "C:\\Users\\rithv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rithv\\source\\repos\\rckannan\\Quality.DTH\\obj\\",
+        "projectPath": "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\Quality.DTH.csproj",
+        "packagesPath": "C:\\Users\\quali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rithv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\quali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,6 +54,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.78, )"
+            },
+            "FontAwesome.Sharp": {
+              "target": "Package",
+              "version": "[5.15.3, )"
             },
             "Microsoft.Bcl.AsyncInterfaces": {
               "target": "Package",
@@ -110,6 +117,9 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
             },
             "Microsoft.WindowsDesktop.App.WindowsForms": {
               "privateAssets": "none"

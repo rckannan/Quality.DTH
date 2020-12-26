@@ -35,9 +35,10 @@ namespace Quality.DTH
             // 
             // cmdLoadData
             // 
-            this.cmdLoadData.Location = new System.Drawing.Point(91, 67);
+            this.cmdLoadData.Location = new System.Drawing.Point(80, 50);
+            this.cmdLoadData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdLoadData.Name = "cmdLoadData";
-            this.cmdLoadData.Size = new System.Drawing.Size(94, 29);
+            this.cmdLoadData.Size = new System.Drawing.Size(82, 22);
             this.cmdLoadData.TabIndex = 0;
             this.cmdLoadData.Text = "Load";
             this.cmdLoadData.UseVisualStyleBackColor = true;
@@ -45,19 +46,21 @@ namespace Quality.DTH
             // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(91, 124);
+            this.txtData.Location = new System.Drawing.Point(80, 93);
+            this.txtData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtData.Multiline = true;
             this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(497, 125);
+            this.txtData.Size = new System.Drawing.Size(435, 95);
             this.txtData.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(730, 375);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.cmdLoadData);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
