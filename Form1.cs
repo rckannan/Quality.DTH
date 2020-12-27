@@ -12,8 +12,10 @@ namespace Quality.DTH
     {
         private readonly ICustomerRepository _customerRepository; 
         private readonly ICustomerQueries _customerQueries;
+
         private readonly IDealerRepository _dealerRepository;
         private readonly IDealerQueries _dealerQueries;
+
         private readonly IMaster_StockQueries _master_SerialItemQueries;
         private readonly IMaster_serialitemRepository _master_SerialitemRepository;
 
