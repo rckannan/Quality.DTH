@@ -42,7 +42,7 @@ namespace Quality.DTH
                 Application.SetHighDpiMode(HighDpiMode.SystemAware);
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(ContainerProvider.Container.Resolve<Forms.Stock_Master>());
+                Application.Run(ContainerProvider.Container.Resolve<Forms.Stock_Transactions>());
                 return 0;
             }
             catch (Exception ex)

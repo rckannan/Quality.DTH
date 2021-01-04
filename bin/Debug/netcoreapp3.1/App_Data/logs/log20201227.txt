@@ -10,3 +10,121 @@
 2020-12-27 01:02:47 [INFO]<> [] Starting App host (Quality.DTH)...
 2020-12-27 01:04:13 [INFO]<> [] Configuring App host (Quality.DTH)...
 2020-12-27 01:04:14 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-27 23:25:44 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-27 23:25:45 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-27 23:26:45 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-27 23:26:47 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-27 23:38:01 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-27 23:38:03 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-27 23:50:19 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Quality.DTH.Forms.Stock_Master.iconButton1_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args)
+2020-12-27 23:50:42 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-27 23:50:43 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-27 23:51:15 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Quality.DTH.Forms.Stock_Master.iconButton1_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 47
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-27 23:52:01 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-27 23:52:03 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-27 23:52:27 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Quality.DTH.Forms.Stock_Master.iconButton1_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 47
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-27 23:52:44 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-27 23:52:46 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-27 23:52:56 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Quality.DTH.Forms.Stock_Master.iconButton1_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 47
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-27 23:53:24 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-27 23:53:25 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-27 23:53:29 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Quality.DTH.Forms.Stock_Master.iconButton1_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 47
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-27 23:53:56 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-27 23:53:57 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-27 23:54:10 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Quality.DTH.Forms.Stock_Master.iconButton1_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 47
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45

@@ -31,6 +31,7 @@ namespace Quality.DTH.Forms
         {
             this.dg_stockGrid = new System.Windows.Forms.DataGridView();
             this.stock_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Idbase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock_unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock_cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,12 +42,13 @@ namespace Quality.DTH.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_unit = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_details = new System.Windows.Forms.TextBox();
+            this.But_Cancel = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_cost = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_details = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_unit = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg_stockGrid)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,10 +58,12 @@ namespace Quality.DTH.Forms
             this.dg_stockGrid.AllowUserToAddRows = false;
             this.dg_stockGrid.AllowUserToDeleteRows = false;
             this.dg_stockGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dg_stockGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(129)))), ((int)(((byte)(139)))));
             this.dg_stockGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dg_stockGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_stockGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.stock_name,
+            this.Idbase,
             this.stock_type,
             this.stock_unit,
             this.stock_cost,
@@ -69,8 +73,10 @@ namespace Quality.DTH.Forms
             this.dg_stockGrid.Name = "dg_stockGrid";
             this.dg_stockGrid.ReadOnly = true;
             this.dg_stockGrid.RowTemplate.Height = 25;
+            this.dg_stockGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dg_stockGrid.Size = new System.Drawing.Size(546, 165);
             this.dg_stockGrid.TabIndex = 0;
+            this.dg_stockGrid.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dg_stockGrid_KeyUp);
             // 
             // stock_name
             // 
@@ -79,6 +85,14 @@ namespace Quality.DTH.Forms
             this.stock_name.MinimumWidth = 150;
             this.stock_name.Name = "stock_name";
             this.stock_name.ReadOnly = true;
+            // 
+            // Idbase
+            // 
+            this.Idbase.DataPropertyName = "Idbase";
+            this.Idbase.HeaderText = "Idbase";
+            this.Idbase.Name = "Idbase";
+            this.Idbase.ReadOnly = true;
+            this.Idbase.Visible = false;
             // 
             // stock_type
             // 
@@ -137,7 +151,7 @@ namespace Quality.DTH.Forms
             this.but_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.but_add.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.but_add.ForeColor = System.Drawing.Color.Gainsboro;
-            this.but_add.IconChar = FontAwesome.Sharp.IconChar.Clone;
+            this.but_add.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.but_add.IconColor = System.Drawing.Color.LightGray;
             this.but_add.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.but_add.IconSize = 20;
@@ -146,11 +160,11 @@ namespace Quality.DTH.Forms
             this.but_add.Name = "but_add";
             this.but_add.Size = new System.Drawing.Size(116, 40);
             this.but_add.TabIndex = 18;
-            this.but_add.Text = "Add";
+            this.but_add.Text = "Save";
             this.but_add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.but_add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.but_add.UseVisualStyleBackColor = true;
-            this.but_add.Click += new System.EventHandler(this.but_add_Click);
+            this.but_add.Click += new System.EventHandler(this.But_add_Click);
             // 
             // label1
             // 
@@ -177,6 +191,7 @@ namespace Quality.DTH.Forms
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.But_Cancel);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txt_cost);
             this.panel1.Controls.Add(this.label4);
@@ -192,48 +207,28 @@ namespace Quality.DTH.Forms
             this.panel1.Location = new System.Drawing.Point(133, 89);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(634, 393);
+            this.panel1.Size = new System.Drawing.Size(634, 402);
             this.panel1.TabIndex = 21;
             // 
-            // label3
+            // But_Cancel
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(472, 26);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 15);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Unit";
-            // 
-            // txt_unit
-            // 
-            this.txt_unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_unit.Location = new System.Drawing.Point(472, 51);
-            this.txt_unit.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_unit.Name = "txt_unit";
-            this.txt_unit.Size = new System.Drawing.Size(116, 23);
-            this.txt_unit.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(162, 90);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 15);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Details";
-            // 
-            // txt_details
-            // 
-            this.txt_details.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_details.Location = new System.Drawing.Point(162, 115);
-            this.txt_details.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_details.Name = "txt_details";
-            this.txt_details.Size = new System.Drawing.Size(426, 23);
-            this.txt_details.TabIndex = 23;
+            this.But_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.But_Cancel.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.But_Cancel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.But_Cancel.IconChar = FontAwesome.Sharp.IconChar.StopCircle;
+            this.But_Cancel.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.But_Cancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.But_Cancel.IconSize = 20;
+            this.But_Cancel.Location = new System.Drawing.Point(337, 148);
+            this.But_Cancel.Margin = new System.Windows.Forms.Padding(2);
+            this.But_Cancel.Name = "But_Cancel";
+            this.But_Cancel.Size = new System.Drawing.Size(116, 40);
+            this.But_Cancel.TabIndex = 22;
+            this.But_Cancel.Text = "Cancel";
+            this.But_Cancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.But_Cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.But_Cancel.UseVisualStyleBackColor = true;
+            this.But_Cancel.Click += new System.EventHandler(this.But_Cancel_Click);
             // 
             // label5
             // 
@@ -255,6 +250,46 @@ namespace Quality.DTH.Forms
             this.txt_cost.Size = new System.Drawing.Size(103, 23);
             this.txt_cost.TabIndex = 25;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Snow;
+            this.label4.Location = new System.Drawing.Point(162, 90);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 15);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Details";
+            // 
+            // txt_details
+            // 
+            this.txt_details.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_details.Location = new System.Drawing.Point(162, 115);
+            this.txt_details.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_details.Name = "txt_details";
+            this.txt_details.Size = new System.Drawing.Size(426, 23);
+            this.txt_details.TabIndex = 23;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Snow;
+            this.label3.Location = new System.Drawing.Point(472, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 15);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Unit";
+            // 
+            // txt_unit
+            // 
+            this.txt_unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_unit.Location = new System.Drawing.Point(472, 51);
+            this.txt_unit.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_unit.Name = "txt_unit";
+            this.txt_unit.Size = new System.Drawing.Size(116, 23);
+            this.txt_unit.TabIndex = 21;
+            // 
             // Stock_Master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -263,6 +298,7 @@ namespace Quality.DTH.Forms
             this.ClientSize = new System.Drawing.Size(923, 586);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.KeyPreview = true;
             this.Name = "Stock_Master";
             this.Text = "Stock_Master";
             this.Load += new System.EventHandler(this.Stock_Master_Load);
@@ -282,16 +318,18 @@ namespace Quality.DTH.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock_type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock_unit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock_cost;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock_detail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_cost;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_details;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_unit;
+        private FontAwesome.Sharp.IconButton But_Cancel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stock_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Idbase;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stock_type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stock_unit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stock_cost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stock_detail;
     }
 }
