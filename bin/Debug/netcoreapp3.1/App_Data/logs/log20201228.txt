@@ -1,0 +1,219 @@
+2020-12-28 00:03:29 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 00:03:30 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 00:10:04 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 00:10:05 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 00:10:13 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'StockType' to type 'System.Int16'.
+   at Quality.DTH.Forms.Stock_Master.iconButton1_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 45
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-28 00:10:35 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 00:10:36 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 00:10:57 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'StockType' to type 'System.Int16'.
+   at Quality.DTH.Forms.Stock_Master.but_add_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 37
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-28 00:12:15 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 00:12:16 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 00:12:33 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'StockType' to type 'System.Int16'.
+   at Quality.DTH.Forms.Stock_Master.but_add_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 37
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-28 00:13:27 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 00:13:28 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 00:13:39 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'StockType' to type 'System.Int16'.
+   at Quality.DTH.Forms.Stock_Master.but_add_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 37
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-28 00:14:12 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 00:14:13 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 00:14:22 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidCastException: Unable to cast object of type 'StockType' to type 'System.Int16'.
+   at Quality.DTH.Forms.Stock_Master.but_add_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 37
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-28 00:14:54 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 00:14:55 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 00:21:03 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 00:21:05 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 00:47:53 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 00:47:54 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:01:25 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:01:26 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:02:37 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:02:38 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:06:25 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:06:26 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:07:44 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:07:46 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:09:02 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:09:03 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:10:58 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:10:59 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:14:34 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:14:35 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:16:02 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidOperationException: The instance of entity type 'Master_Stock' cannot be tracked because another instance with the key value '{Idbase: 3}' is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at Quality.DTH.Repository.Master_StockRepository.Add(Master_Stock item) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Repository\IMaster_StockRepository.cs:line 35
+   at Quality.DTH.Forms.Stock_Master.But_add_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 45
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-28 01:17:09 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:17:09 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:19:58 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:19:59 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:21:09 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidOperationException: The instance of entity type 'Master_Stock' cannot be tracked because another instance with the key value '{Idbase: 3}' is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Update[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at Quality.DTH.Repository.Master_StockRepository.Update(Master_Stock item) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Repository\IMaster_StockRepository.cs:line 42
+   at Quality.DTH.Forms.Stock_Master.But_add_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 48
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45
+2020-12-28 01:21:46 [INFO]<> [] Configuring App host (Quality.DTH)...
+2020-12-28 01:21:47 [INFO]<> [] Starting App host (Quality.DTH)...
+2020-12-28 01:22:18 [FATL]<> [] Program terminated unexpectedly (Quality.DTH)!
+System.InvalidOperationException: The instance of entity type 'Master_Stock' cannot be tracked because another instance with the key value '{Idbase: 2}' is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Update[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at Quality.DTH.Repository.Master_StockRepository.Update(Master_Stock item) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Repository\IMaster_StockRepository.cs:line 42
+   at Quality.DTH.Forms.Stock_Master.But_add_Click(Object sender, EventArgs e) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Forms\Stock_Master.cs:line 48
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Quality.DTH.Program.Main(String[] args) in C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\Program.cs:line 45

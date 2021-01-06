@@ -29,63 +29,67 @@ namespace Quality.DTH.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txt_Comments = new System.Windows.Forms.TextBox();
+            this.lbl_RefNo = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.but_Reset = new FontAwesome.Sharp.IconButton();
+            this.but_Move = new FontAwesome.Sharp.IconButton();
+            this.dg1 = new System.Windows.Forms.DataGridView();
             this._sno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._item_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._stock_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._qty_serial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.but_Add = new FontAwesome.Sharp.IconButton();
+            this.cmb_Q_S = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cmb_Stock = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmb_StockType = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmb_ToDealer = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmb_FromDealer = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_TransType = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtPicker = new System.Windows.Forms.DateTimePicker();
+            this.but_COMISP = new FontAwesome.Sharp.IconButton();
+            this.but_ISPDEL = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.but_ISPDEL);
+            this.panel1.Controls.Add(this.but_COMISP);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.txt_Comments);
+            this.panel1.Controls.Add(this.lbl_RefNo);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.iconButton2);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.iconButton3);
-            this.panel1.Controls.Add(this.comboBox6);
+            this.panel1.Controls.Add(this.but_Reset);
+            this.panel1.Controls.Add(this.but_Move);
+            this.panel1.Controls.Add(this.dg1);
+            this.panel1.Controls.Add(this.but_Add);
+            this.panel1.Controls.Add(this.cmb_Q_S);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.comboBox5);
+            this.panel1.Controls.Add(this.cmb_Stock);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.comboBox4);
+            this.panel1.Controls.Add(this.cmb_StockType);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.cmb_ToDealer);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.cmb_FromDealer);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cmb_TransType);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.dtPicker);
             this.panel1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(47, 39);
             this.panel1.Name = "panel1";
@@ -96,108 +100,108 @@ namespace Quality.DTH.Forms
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(497, 455);
+            this.label10.Location = new System.Drawing.Point(492, 501);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(94, 19);
             this.label10.TabIndex = 22;
             this.label10.Text = "Comments :";
             // 
-            // textBox1
+            // txt_Comments
             // 
-            this.textBox1.Location = new System.Drawing.Point(597, 452);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(520, 65);
-            this.textBox1.TabIndex = 21;
+            this.txt_Comments.Location = new System.Drawing.Point(592, 498);
+            this.txt_Comments.Multiline = true;
+            this.txt_Comments.Name = "txt_Comments";
+            this.txt_Comments.Size = new System.Drawing.Size(520, 65);
+            this.txt_Comments.TabIndex = 21;
             // 
-            // label9
+            // lbl_RefNo
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Location = new System.Drawing.Point(168, 61);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 19);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "1001";
+            this.lbl_RefNo.AutoSize = true;
+            this.lbl_RefNo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_RefNo.Location = new System.Drawing.Point(163, 107);
+            this.lbl_RefNo.Name = "lbl_RefNo";
+            this.lbl_RefNo.Size = new System.Drawing.Size(45, 19);
+            this.lbl_RefNo.TabIndex = 20;
+            this.lbl_RefNo.Text = "1001";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(28, 61);
+            this.label8.Location = new System.Drawing.Point(23, 107);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 19);
             this.label8.TabIndex = 19;
             this.label8.Text = "Ref. No :";
             // 
-            // iconButton2
+            // but_Reset
             // 
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
-            this.iconButton2.IconColor = System.Drawing.Color.LightGray;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 30;
-            this.iconButton2.Location = new System.Drawing.Point(762, 536);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(167, 44);
-            this.iconButton2.TabIndex = 18;
-            this.iconButton2.Text = "Reset";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.but_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_Reset.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.but_Reset.ForeColor = System.Drawing.Color.Gainsboro;
+            this.but_Reset.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+            this.but_Reset.IconColor = System.Drawing.Color.LightGray;
+            this.but_Reset.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.but_Reset.IconSize = 30;
+            this.but_Reset.Location = new System.Drawing.Point(757, 582);
+            this.but_Reset.Name = "but_Reset";
+            this.but_Reset.Size = new System.Drawing.Size(167, 44);
+            this.but_Reset.TabIndex = 18;
+            this.but_Reset.Text = "Reset";
+            this.but_Reset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.but_Reset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.but_Reset.UseVisualStyleBackColor = true;
             // 
-            // iconButton1
+            // but_Move
             // 
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.TruckLoading;
-            this.iconButton1.IconColor = System.Drawing.Color.LightGray;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.Location = new System.Drawing.Point(950, 536);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(167, 44);
-            this.iconButton1.TabIndex = 17;
-            this.iconButton1.Text = "Move";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.but_Move.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_Move.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.but_Move.ForeColor = System.Drawing.Color.Gainsboro;
+            this.but_Move.IconChar = FontAwesome.Sharp.IconChar.TruckLoading;
+            this.but_Move.IconColor = System.Drawing.Color.LightGray;
+            this.but_Move.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.but_Move.IconSize = 30;
+            this.but_Move.Location = new System.Drawing.Point(945, 582);
+            this.but_Move.Name = "but_Move";
+            this.but_Move.Size = new System.Drawing.Size(167, 44);
+            this.but_Move.TabIndex = 17;
+            this.but_Move.Text = "Move";
+            this.but_Move.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.but_Move.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.but_Move.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dg1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(129)))), ((int)(((byte)(139)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(44)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dg1.AllowUserToAddRows = false;
+            this.dg1.AllowUserToDeleteRows = false;
+            this.dg1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dg1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dg1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(129)))), ((int)(((byte)(139)))));
+            this.dg1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dg1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(44)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this._sno,
             this._item_name,
             this._stock_type,
             this._qty_serial});
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(497, 61);
-            this.dataGridView1.MinimumSize = new System.Drawing.Size(620, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 381);
-            this.dataGridView1.TabIndex = 16;
+            this.dg1.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dg1.Location = new System.Drawing.Point(492, 107);
+            this.dg1.MinimumSize = new System.Drawing.Size(620, 0);
+            this.dg1.Name = "dg1";
+            this.dg1.ReadOnly = true;
+            this.dg1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dg1.RowTemplate.Height = 25;
+            this.dg1.Size = new System.Drawing.Size(620, 381);
+            this.dg1.TabIndex = 16;
             // 
             // _sno
             // 
@@ -227,128 +231,128 @@ namespace Quality.DTH.Forms
             this._qty_serial.Name = "_qty_serial";
             this._qty_serial.ReadOnly = true;
             // 
-            // iconButton3
+            // but_Add
             // 
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
-            this.iconButton3.IconColor = System.Drawing.Color.LightGray;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 30;
-            this.iconButton3.Location = new System.Drawing.Point(168, 467);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.iconButton3.Size = new System.Drawing.Size(285, 44);
-            this.iconButton3.TabIndex = 15;
-            this.iconButton3.Text = "Add";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.but_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_Add.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.but_Add.ForeColor = System.Drawing.Color.Gainsboro;
+            this.but_Add.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
+            this.but_Add.IconColor = System.Drawing.Color.LightGray;
+            this.but_Add.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.but_Add.IconSize = 30;
+            this.but_Add.Location = new System.Drawing.Point(163, 513);
+            this.but_Add.Name = "but_Add";
+            this.but_Add.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.but_Add.Size = new System.Drawing.Size(285, 44);
+            this.but_Add.TabIndex = 15;
+            this.but_Add.Text = "Add";
+            this.but_Add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.but_Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.but_Add.UseVisualStyleBackColor = true;
             // 
-            // comboBox6
+            // cmb_Q_S
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(168, 415);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(285, 27);
-            this.comboBox6.TabIndex = 13;
+            this.cmb_Q_S.FormattingEnabled = true;
+            this.cmb_Q_S.Location = new System.Drawing.Point(163, 461);
+            this.cmb_Q_S.Name = "cmb_Q_S";
+            this.cmb_Q_S.Size = new System.Drawing.Size(285, 27);
+            this.cmb_Q_S.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(26, 418);
+            this.label7.Location = new System.Drawing.Point(21, 464);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 19);
             this.label7.TabIndex = 12;
             this.label7.Text = "Qty / Serial";
             // 
-            // comboBox5
+            // cmb_Stock
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(168, 365);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(285, 27);
-            this.comboBox5.TabIndex = 11;
+            this.cmb_Stock.FormattingEnabled = true;
+            this.cmb_Stock.Location = new System.Drawing.Point(163, 411);
+            this.cmb_Stock.Name = "cmb_Stock";
+            this.cmb_Stock.Size = new System.Drawing.Size(285, 27);
+            this.cmb_Stock.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(29, 368);
+            this.label6.Location = new System.Drawing.Point(24, 414);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 19);
             this.label6.TabIndex = 10;
             this.label6.Text = "Stock";
             // 
-            // comboBox4
+            // cmb_StockType
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(168, 313);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(285, 27);
-            this.comboBox4.TabIndex = 9;
+            this.cmb_StockType.FormattingEnabled = true;
+            this.cmb_StockType.Location = new System.Drawing.Point(163, 359);
+            this.cmb_StockType.Name = "cmb_StockType";
+            this.cmb_StockType.Size = new System.Drawing.Size(285, 27);
+            this.cmb_StockType.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(29, 316);
+            this.label5.Location = new System.Drawing.Point(24, 362);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 19);
             this.label5.TabIndex = 8;
             this.label5.Text = "Stock Type";
             // 
-            // comboBox3
+            // cmb_ToDealer
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(168, 261);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(285, 27);
-            this.comboBox3.TabIndex = 7;
+            this.cmb_ToDealer.FormattingEnabled = true;
+            this.cmb_ToDealer.Location = new System.Drawing.Point(163, 307);
+            this.cmb_ToDealer.Name = "cmb_ToDealer";
+            this.cmb_ToDealer.Size = new System.Drawing.Size(285, 27);
+            this.cmb_ToDealer.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(26, 264);
+            this.label4.Location = new System.Drawing.Point(21, 310);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Stock To";
             // 
-            // comboBox2
+            // cmb_FromDealer
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(168, 209);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(285, 27);
-            this.comboBox2.TabIndex = 5;
+            this.cmb_FromDealer.FormattingEnabled = true;
+            this.cmb_FromDealer.Location = new System.Drawing.Point(163, 255);
+            this.cmb_FromDealer.Name = "cmb_FromDealer";
+            this.cmb_FromDealer.Size = new System.Drawing.Size(285, 27);
+            this.cmb_FromDealer.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(26, 212);
+            this.label3.Location = new System.Drawing.Point(21, 258);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Stock From";
             // 
-            // comboBox1
+            // cmb_TransType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(168, 157);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(285, 27);
-            this.comboBox1.TabIndex = 3;
+            this.cmb_TransType.FormattingEnabled = true;
+            this.cmb_TransType.Location = new System.Drawing.Point(163, 203);
+            this.cmb_TransType.Name = "cmb_TransType";
+            this.cmb_TransType.Size = new System.Drawing.Size(285, 27);
+            this.cmb_TransType.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(26, 160);
+            this.label2.Location = new System.Drawing.Point(21, 206);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 19);
             this.label2.TabIndex = 2;
@@ -358,18 +362,56 @@ namespace Quality.DTH.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(29, 111);
+            this.label1.Location = new System.Drawing.Point(24, 157);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Date";
             // 
-            // dateTimePicker1
+            // dtPicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(168, 105);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(285, 27);
-            this.dateTimePicker1.TabIndex = 0;
+            this.dtPicker.Location = new System.Drawing.Point(163, 151);
+            this.dtPicker.Name = "dtPicker";
+            this.dtPicker.Size = new System.Drawing.Size(285, 27);
+            this.dtPicker.TabIndex = 0;
+            // 
+            // but_COMISP
+            // 
+            this.but_COMISP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_COMISP.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.but_COMISP.ForeColor = System.Drawing.Color.Gainsboro;
+            this.but_COMISP.IconChar = FontAwesome.Sharp.IconChar.ArrowsAltH;
+            this.but_COMISP.IconColor = System.Drawing.Color.LightGray;
+            this.but_COMISP.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.but_COMISP.IconSize = 30;
+            this.but_COMISP.Location = new System.Drawing.Point(24, 23);
+            this.but_COMISP.Name = "but_COMISP";
+            this.but_COMISP.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.but_COMISP.Size = new System.Drawing.Size(246, 44);
+            this.but_COMISP.TabIndex = 23;
+            this.but_COMISP.Text = "COMPANY <> ISP";
+            this.but_COMISP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.but_COMISP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.but_COMISP.UseVisualStyleBackColor = true;
+            // 
+            // but_ISPDEL
+            // 
+            this.but_ISPDEL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_ISPDEL.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.but_ISPDEL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.but_ISPDEL.IconChar = FontAwesome.Sharp.IconChar.ArrowsAltH;
+            this.but_ISPDEL.IconColor = System.Drawing.Color.LightGray;
+            this.but_ISPDEL.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.but_ISPDEL.IconSize = 30;
+            this.but_ISPDEL.Location = new System.Drawing.Point(285, 23);
+            this.but_ISPDEL.Name = "but_ISPDEL";
+            this.but_ISPDEL.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.but_ISPDEL.Size = new System.Drawing.Size(246, 44);
+            this.but_ISPDEL.TabIndex = 24;
+            this.but_ISPDEL.Text = "ISP <> DEALER";
+            this.but_ISPDEL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.but_ISPDEL.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.but_ISPDEL.UseVisualStyleBackColor = true;
             // 
             // Stock_Transactions
             // 
@@ -384,7 +426,7 @@ namespace Quality.DTH.Forms
             this.Load += new System.EventHandler(this.Stock_Transactions_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -392,31 +434,33 @@ namespace Quality.DTH.Forms
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmb_ToDealer;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmb_FromDealer;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_TransType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.DateTimePicker dtPicker;
+        private System.Windows.Forms.ComboBox cmb_Stock;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmb_StockType;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cmb_Q_S;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dg1;
         private System.Windows.Forms.DataGridViewTextBoxColumn _sno;
         private System.Windows.Forms.DataGridViewTextBoxColumn _item_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn _stock_type;
         private System.Windows.Forms.DataGridViewTextBoxColumn _qty_serial;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton but_Add;
+        private FontAwesome.Sharp.IconButton but_Move;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_Comments;
+        private System.Windows.Forms.Label lbl_RefNo;
         private System.Windows.Forms.Label label8;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton but_Reset;
+        private FontAwesome.Sharp.IconButton but_ISPDEL;
+        private FontAwesome.Sharp.IconButton but_COMISP;
     }
 }

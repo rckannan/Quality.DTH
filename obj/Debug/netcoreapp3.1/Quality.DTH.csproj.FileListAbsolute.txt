@@ -130,7 +130,6 @@ C:\Users\rithv\Source\Repos\rckannan\Quality.DTH\bin\Debug\netcoreapp3.1\Microso
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.csprojAssemblyReference.cache
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.Form1.resources
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\QSKY2020.Form1.resources
-C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.test.resources
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.Properties.Resources.resources
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.csproj.GenerateResource.cache
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.AssemblyInfoInputs.cache
@@ -199,3 +198,4 @@ C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Qu
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.genruntimeconfig.cache
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.Stock_Transactions.resources
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.Stock_Master.resources
+C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.Dealers.resources

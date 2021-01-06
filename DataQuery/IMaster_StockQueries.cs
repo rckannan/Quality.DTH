@@ -48,8 +48,9 @@ namespace Quality.DTH.Queries
                 connection.Open();
 
                 var result = await connection.QueryAsync<Master_StockDTO>(
-                   @"select * from DTH.tbl_master_stock ");
+                   @"SELECT Idbase, stock_name, if(stock_type = 1001, 'Serial', 'NonSerial') as stock_type, stock_unit, stock_cost, stock_detail FROM DTH.tbl_master_stock");
 
+                
                 if (result.AsList().Count == 0)
                     throw new KeyNotFoundException();
 
@@ -64,7 +65,7 @@ namespace Quality.DTH.Queries
         public string stock_name { get; set; }
         public string stock_unit { get; set; } 
         public string stock_detail { get; set; }
-        public Int16 stock_type { get; set; }
+        public string stock_type { get; set; }
         public decimal stock_cost { get; set; }
         public Int64 Idbase { get; set; }
 
