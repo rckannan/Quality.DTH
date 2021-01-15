@@ -49,6 +49,7 @@ namespace Quality.DTH.Forms
             this.txt_details = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_unit = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg_stockGrid)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -72,10 +73,12 @@ namespace Quality.DTH.Forms
             this.dg_stockGrid.Margin = new System.Windows.Forms.Padding(2);
             this.dg_stockGrid.Name = "dg_stockGrid";
             this.dg_stockGrid.ReadOnly = true;
+            this.dg_stockGrid.RowHeadersWidth = 51;
             this.dg_stockGrid.RowTemplate.Height = 25;
             this.dg_stockGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dg_stockGrid.Size = new System.Drawing.Size(546, 165);
             this.dg_stockGrid.TabIndex = 0;
+            this.dg_stockGrid.SelectionChanged += new System.EventHandler(this.dg_stockGrid_SelectionChanged);
             this.dg_stockGrid.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dg_stockGrid_KeyUp);
             // 
             // stock_name
@@ -90,6 +93,7 @@ namespace Quality.DTH.Forms
             // 
             this.Idbase.DataPropertyName = "Idbase";
             this.Idbase.HeaderText = "Idbase";
+            this.Idbase.MinimumWidth = 6;
             this.Idbase.Name = "Idbase";
             this.Idbase.ReadOnly = true;
             this.Idbase.Visible = false;
@@ -134,7 +138,7 @@ namespace Quality.DTH.Forms
             this.cmb_stockType.Location = new System.Drawing.Point(42, 50);
             this.cmb_stockType.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_stockType.Name = "cmb_stockType";
-            this.cmb_stockType.Size = new System.Drawing.Size(200, 23);
+            this.cmb_stockType.Size = new System.Drawing.Size(200, 28);
             this.cmb_stockType.TabIndex = 1;
             // 
             // txt_stockName
@@ -143,13 +147,13 @@ namespace Quality.DTH.Forms
             this.txt_stockName.Location = new System.Drawing.Point(257, 51);
             this.txt_stockName.Margin = new System.Windows.Forms.Padding(2);
             this.txt_stockName.Name = "txt_stockName";
-            this.txt_stockName.Size = new System.Drawing.Size(196, 23);
+            this.txt_stockName.Size = new System.Drawing.Size(196, 26);
             this.txt_stockName.TabIndex = 2;
             // 
             // but_add
             // 
             this.but_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_add.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.but_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.but_add.ForeColor = System.Drawing.Color.Gainsboro;
             this.but_add.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.but_add.IconColor = System.Drawing.Color.LightGray;
@@ -173,7 +177,7 @@ namespace Quality.DTH.Forms
             this.label1.Location = new System.Drawing.Point(42, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 15);
+            this.label1.Size = new System.Drawing.Size(92, 20);
             this.label1.TabIndex = 19;
             this.label1.Text = "Stock Type";
             // 
@@ -184,7 +188,7 @@ namespace Quality.DTH.Forms
             this.label2.Location = new System.Drawing.Point(257, 26);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 15);
+            this.label2.Size = new System.Drawing.Size(100, 20);
             this.label2.TabIndex = 20;
             this.label2.Text = "Stock Name";
             // 
@@ -213,7 +217,7 @@ namespace Quality.DTH.Forms
             // But_Cancel
             // 
             this.But_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.But_Cancel.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.But_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.But_Cancel.ForeColor = System.Drawing.Color.Gainsboro;
             this.But_Cancel.IconChar = FontAwesome.Sharp.IconChar.StopCircle;
             this.But_Cancel.IconColor = System.Drawing.Color.WhiteSmoke;
@@ -237,7 +241,7 @@ namespace Quality.DTH.Forms
             this.label5.Location = new System.Drawing.Point(42, 90);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 15);
+            this.label5.Size = new System.Drawing.Size(44, 20);
             this.label5.TabIndex = 26;
             this.label5.Text = "Cost";
             // 
@@ -247,7 +251,7 @@ namespace Quality.DTH.Forms
             this.txt_cost.Location = new System.Drawing.Point(42, 115);
             this.txt_cost.Margin = new System.Windows.Forms.Padding(2);
             this.txt_cost.Name = "txt_cost";
-            this.txt_cost.Size = new System.Drawing.Size(103, 23);
+            this.txt_cost.Size = new System.Drawing.Size(103, 26);
             this.txt_cost.TabIndex = 25;
             // 
             // label4
@@ -257,7 +261,7 @@ namespace Quality.DTH.Forms
             this.label4.Location = new System.Drawing.Point(162, 90);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 15);
+            this.label4.Size = new System.Drawing.Size(62, 20);
             this.label4.TabIndex = 24;
             this.label4.Text = "Details";
             // 
@@ -267,7 +271,7 @@ namespace Quality.DTH.Forms
             this.txt_details.Location = new System.Drawing.Point(162, 115);
             this.txt_details.Margin = new System.Windows.Forms.Padding(2);
             this.txt_details.Name = "txt_details";
-            this.txt_details.Size = new System.Drawing.Size(426, 23);
+            this.txt_details.Size = new System.Drawing.Size(426, 26);
             this.txt_details.TabIndex = 23;
             // 
             // label3
@@ -277,7 +281,7 @@ namespace Quality.DTH.Forms
             this.label3.Location = new System.Drawing.Point(472, 26);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 15);
+            this.label3.Size = new System.Drawing.Size(39, 20);
             this.label3.TabIndex = 22;
             this.label3.Text = "Unit";
             // 
@@ -287,17 +291,28 @@ namespace Quality.DTH.Forms
             this.txt_unit.Location = new System.Drawing.Point(472, 51);
             this.txt_unit.Margin = new System.Windows.Forms.Padding(2);
             this.txt_unit.Name = "txt_unit";
-            this.txt_unit.Size = new System.Drawing.Size(116, 23);
+            this.txt_unit.Size = new System.Drawing.Size(116, 26);
             this.txt_unit.TabIndex = 21;
+            // 
+            // txtid
+            // 
+            this.txtid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtid.Location = new System.Drawing.Point(175, 50);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtid.Name = "txtid";
+            this.txtid.ReadOnly = true;
+            this.txtid.Size = new System.Drawing.Size(196, 26);
+            this.txtid.TabIndex = 27;
             // 
             // Stock_Master
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(923, 586);
+            this.Controls.Add(this.txtid);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.KeyPreview = true;
             this.Name = "Stock_Master";
             this.Text = "Stock_Master";
@@ -306,6 +321,7 @@ namespace Quality.DTH.Forms
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -331,5 +347,6 @@ namespace Quality.DTH.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn stock_unit;
         private System.Windows.Forms.DataGridViewTextBoxColumn stock_cost;
         private System.Windows.Forms.DataGridViewTextBoxColumn stock_detail;
+        private System.Windows.Forms.TextBox txtid;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using EntityFramework.Exceptions.MySQL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Logging;
@@ -62,9 +63,9 @@ namespace Quality.DTH
                 .UseMySQL(
                     conf["ConnectionString"]).UseLazyLoadingProxies() // <-- enable Lazy Loading
                                                                        .UseLoggerFactory(LoggerFactory.Create(b => b .AddFilter(level => level >= LogLevel.Information   )))
-                 
+                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
                 .EnableSensitiveDataLogging()
-                .EnableDetailedErrors();
+                .UseExceptionProcessor().EnableDetailedErrors();
              
         }
 

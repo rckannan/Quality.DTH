@@ -199,3 +199,14 @@ C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Qu
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.Stock_Transactions.resources
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.Stock_Master.resources
 C:\Users\quali\Source\Repos\qualitygopu\Quality.DTH-1\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.Dealers.resources
+E:\repos\Quality.DTH\bin\Debug\netcoreapp3.1\Castle.Core.dll
+E:\repos\Quality.DTH\bin\Debug\netcoreapp3.1\FontAwesome.Sharp.dll
+E:\repos\Quality.DTH\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+E:\repos\Quality.DTH\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+E:\repos\Quality.DTH\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.Dealers.resources
+E:\repos\Quality.DTH\obj\Debug\netcoreapp3.1\QSKY2020.Form1.resources
+E:\repos\Quality.DTH\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.Stock_Transactions.resources
+E:\repos\Quality.DTH\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.Stock_Master.resources
+E:\repos\Quality.DTH\obj\Debug\netcoreapp3.1\Quality.DTH.Properties.Resources.resources
+E:\repos\Quality.DTH\obj\Debug\netcoreapp3.1\Quality.DTH.Forms.BaseForm.resources
+E:\repos\Quality.DTH\bin\Debug\netcoreapp3.1\EntityFramework.Exceptions.Common.dll

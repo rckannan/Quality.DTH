@@ -61,4 +61,41 @@ namespace Quality.DTH.Repository
         }
          
     }
+
+    //class updateT<T>  where T : Entity
+    //{
+    //    private readonly COREAPIContext _context;
+    //    public IUnitOfWork UnitOfWork
+    //    {
+    //        get
+    //        {
+    //            return _context;
+    //        }
+    //    }
+
+    //    public updateT(COREAPIContext context)
+    //    {
+    //        _context = context ?? throw new ArgumentNullException(nameof(context));
+    //    }
+    //    public T Add(T item)
+    //    {
+    //        var retobj = _context.Add(item).Entity;
+    //        this.UnitOfWork.SaveEntitiesAsync();
+    //        return retobj;
+    //    }
+
+    //    public T Update(T item)
+    //    {
+    //        var retobj = _context.Update(item).Entity;
+    //        this.UnitOfWork.SaveEntitiesAsync();
+    //        return retobj;
+    //    }
+
+    //    public T Delete(T item)
+    //    {
+    //        var retobj = _context.Remove(item).Entity;
+    //        this.UnitOfWork.SaveEntitiesAsync();
+    //        return retobj;
+    //    }
+    //}
 }

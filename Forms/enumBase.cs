@@ -21,5 +21,28 @@ namespace Quality.DTH.Forms
             DEALER_to_ACTIVATION = 506
         }
 
+        //public class StockTypebase
+        //{
+        //    private Int64 stock_typeid { get; set; }
+        //    private string stock_type { get; set; }
+        //    //Serial = 1001,
+        //    //NonSerial = 1002
+        //    public StockTypebase(Int64 _StockTypeID, string _StockType) {
+        //        stock_typeid = _StockTypeID;
+        //        stock_type = _StockType;
+        //    }
+        //}
+
+        //public class StockTypes : List<StockTypebase>
+        //{ 
+        //    //Serial = 1001,
+        //    //NonSerial = 1002
+
+        //    public StockTypes()
+        //    {
+        //        this.Add(new StockTypebase(1001, "Serial"));
+        //        this.Add(new StockTypebase(1002, "NonSerial"));
+        //    }
+        //}
     }
 }

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\Quality.DTH.csproj": {}
+    "E:\\repos\\Quality.DTH\\Quality.DTH.csproj": {}
   },
   "projects": {
-    "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\Quality.DTH.csproj": {
+    "E:\\repos\\Quality.DTH\\Quality.DTH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\Quality.DTH.csproj",
+        "projectUniqueName": "E:\\repos\\Quality.DTH\\Quality.DTH.csproj",
         "projectName": "Quality.DTH",
-        "projectPath": "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\Quality.DTH.csproj",
-        "packagesPath": "C:\\Users\\quali\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\quali\\Source\\Repos\\qualitygopu\\Quality.DTH-1\\obj\\",
+        "projectPath": "E:\\repos\\Quality.DTH\\Quality.DTH.csproj",
+        "packagesPath": "C:\\Users\\rithv\\.nuget\\packages\\",
+        "outputPath": "E:\\repos\\Quality.DTH\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quali\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rithv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,6 +51,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.78, )"
+            },
+            "EntityFrameworkCore.Exceptions.Common": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "FontAwesome.Sharp": {
               "target": "Package",
@@ -125,7 +126,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

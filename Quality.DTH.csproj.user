@@ -7,16 +7,19 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Stocks_Trans.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Stock_Master.cs">
+    <Compile Update="Forms\Dealers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Dealers.cs">
+    <Compile Update="Forms\Stock_Master.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

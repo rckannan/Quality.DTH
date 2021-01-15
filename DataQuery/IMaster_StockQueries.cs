@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
+using Quality.DTH.Infra;
 
 namespace Quality.DTH.Queries
 {
@@ -11,6 +12,8 @@ namespace Quality.DTH.Queries
         Task<Master_StockDTO> GetMaster_StockItem(Int64 id);
 
         Task<IEnumerable<Master_StockDTO>> GetMaster_StockItems();
+
+        Task<Master_StockDTO> GetMaster_StockItem(Int64 id, string stock);
     }
 
     public class Master_StockQueries : IMaster_StockQueries
@@ -41,6 +44,11 @@ namespace Quality.DTH.Queries
             }
         }
 
+        public Task<Master_StockDTO> GetMaster_StockItem(long id, string stock)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IEnumerable<Master_StockDTO>> GetMaster_StockItems()
         {
             using (var connection = new MySql.Data.MySqlClient.MySqlConnection(_connectionString))
@@ -60,9 +68,10 @@ namespace Quality.DTH.Queries
  
     }
 
-    public class Master_StockDTO
-    { 
-        public string stock_name { get; set; }
+    public class Master_StockDTO : BaseDTO
+    {
+        private string _stock_name;
+        public string stock_name { get => _stock_name; set => SetField(ref _stock_name, value); }
         public string stock_unit { get; set; } 
         public string stock_detail { get; set; }
         public string stock_type { get; set; }
